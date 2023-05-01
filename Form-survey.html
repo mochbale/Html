@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Silakan Isi Survey.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Masukan Nama Anda" required />
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Masukan Email Anda" required />
+      <label for="number" id="number-label">Rate User Experience</label>
+      <input
+        type="number"
+        id="number"
+        min="1"
+        max="10"
+        placeholder="Nilai angka 1 sampai 10"
+        required
+      />
+      
+      <!-- more form content goes here -->
+      
+      <label for="dropdown">Choose an option:</label>
+      <select id="dropdown">
+        <option value="">--Please choose an option--</option>
+        <option value="option1">Pilih Aku </option>
+        <option value="option2">Apa Dia</option>
+      </select>
+
+      <fieldset>
+        <legend>Choose a radio button:</legend>
+        <input type="radio" id="radio1" name="radio-group" value="radio1">
+        <label for="radio1">Lu Bingung?</label><br>
+        <input type="radio" id="radio2" name="radio-group" value="radio2">
+        <label for="radio2">Gua juga sih</label><br>  
+      </fieldset> 
+
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Komentar anda Disini"></textarea>
+
+ 
+      <label for="chechbox">Silahkan Pilih</label>
+      <label for="checkbox1">
+        <input type="checkbox" id="checkbox1" name="checkbox-group" value="checkbox1">Pilih 1
+      </label>
+      
+      <label for="checkbox2">
+        <input type="checkbox" id="checkbox2" name="checkbox-group" value="checkbox2"> Pilih 2
+      </label>
+
+      <button type="submit" id="submit">Kalo Udah KliK </button>
+    </form>
+  </body>
+</html>
